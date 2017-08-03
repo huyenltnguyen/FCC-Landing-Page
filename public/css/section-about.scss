@@ -1,0 +1,27 @@
+/*------ ABOUT SECTION ------*/
+#about-section {
+	padding: 80px 0;
+
+	p {
+		line-height: 25px;
+	}
+	
+	/*----- TITLE BOX --------*/
+	.title-box {
+		@include title-box-style;
+	}
+
+	/*------ CONTENT PARAGRAPH -------*/
+	.content {
+		font-family: $libre-baskerville-font;
+		font-size: 16px;
+		color: $grey-text;
+		margin-bottom: 30px;		
+	}
+	
+	/*----- IMG BOX -----*/
+	.img-box img {
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	}
+}
+

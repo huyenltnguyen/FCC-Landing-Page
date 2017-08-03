@@ -1,0 +1,112 @@
+@import "variables";
+@import "mixins";
+@import "section-home";
+@import "section-about";
+@import "section-top-dishes";
+@import "section-testimonials";
+@import "section-reservation";
+@import "section-full-menu";
+
+
+html, body {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	letter-spacing: 0.3px;
+}
+
+/*----- OVERRIDE NAVBAR STYLES -----*/ 
+#navbar-overrides {
+	width: 100%;
+	background-color: rgba(0,0,0,0.0);
+	border: none;			
+	text-transform: uppercase;
+	font-family: $montserrat-font;
+	position: absolute;
+	z-index: 100;		
+	
+	li.active {
+		a {
+			color: $white-text;
+		}
+	}
+	
+	li a {
+		background-color: rgba(0,0,0,0.0);
+		color: #cdcdcd;
+		font-size: 14px;
+		line-height: 66px;		
+
+		&:hover{
+			color: $white-text;
+			transition: all .3s;
+		}
+	}
+
+	.navbar-header {
+		margin-right: 20px;
+	}
+}
+
+/*--------- INTRO SECTION -----------*/
+#intro-section {
+	padding: 80px 0;
+	background-color: #f7f7f7;
+
+	.single-box {
+		display: flex;
+		align-items: center;
+
+		.icon-box {
+			padding-right: 28px;
+
+			.fa {
+				font-size: 66px;
+			}
+		}		
+
+		h2 {
+			font-family: $montserrat-font;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		p {
+			font-family: $libre-baskerville-font;
+			font-size: 16px;
+			line-height: 24px;
+			color: $grey-text;
+		}
+	}	
+}
+
+
+/*------- CONTACT --------*/
+#contact-section {
+	padding: 80px 0;
+	min-height: 600px;
+	background: url("http://templates.framework-y.com/gourmet/images/bg-30.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $white-text;
+
+
+	/*------ TITLE BOX -------*/
+	.title-box {
+		@include title-box-style;
+
+		.sub-heading-white {
+			color: $white-text;
+		}
+	}
+
+	p {
+		font-family: $libre-baskerville-font;
+		font-size: 16px;
+		font-style: italic;
+	}
+}

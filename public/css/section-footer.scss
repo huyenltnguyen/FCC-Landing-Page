@@ -1,0 +1,85 @@
+/*------ FOOTER ------*/
+footer {
+	position: relative;
+	z-index: -1;
+	height: 400px;		
+
+	#footer-wrapper {
+		padding: 40px 0;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		right: 0;		
+	}
+
+	img {
+		width: 180px;
+		margin-bottom: 30px;
+	}
+
+	p {
+		margin-bottom: 30px;
+		font-family: $libre-baskerville-font;
+		font-size: 17px;
+		line-height: 25px;
+		color: $grey-text;
+	}
+
+	/*----- SOCIAL ICONS -----*/
+	button {		
+		width: 52px;
+		height: 36px;
+		text-align: center;
+		border-radius: 0 !important;
+		background-color: rgba(0,0,0,0);
+		transition: all 0.3s ease;
+
+		a {
+			color: $grey-text;
+			font-size: 17px; 
+		}
+
+		&:hover {
+			a {
+				color: $white-text;
+			}
+		}
+	}
+
+	.btn-facebook {		
+		&:hover {
+			background-color: #3b5998;
+		}		
+	}
+
+	.btn-twitter {		
+		&:hover {
+			background-color: #55acee;
+		}		
+	}
+
+	.btn-instagram {		
+		&:hover {
+			background-color: #125688;
+		}		
+	}
+
+	.btn-youtube {		
+		&:hover {
+			background-color: #bb0000;
+		}		
+	}
+	
+	/*------ COPYRIGHT -----*/
+	#copyright {
+		padding-top: 15px;
+		margin-top: 30px;
+		border-top: 1px solid #eee;
+
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			font-family: $libre-baskerville-font;
+		}
+	}	
+}

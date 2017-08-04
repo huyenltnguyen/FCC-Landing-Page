@@ -1,24 +1,24 @@
 
 /* -------- HOME SECTION -----------*/
-#home-page {	
-	position: relative;
+#home-page {
 	height: 100%;
 	display: flex;
 	align-items: center;
 	color: $white-text;
-	text-align: left;
 	background-image: url('http://templates.framework-y.com/gourmet/images/bg-22.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+
 	
 	/*-------- CLOUDS --------*/
 	.animated-cloud {
-		position: absolute;	
+		position: absolute;
 		width: 100%;
+		max-width: 100%;
 		min-height: 600px;
 		z-index: 0;		
-   	overflow: hidden;
+   	overflow-x: hidden;
 		opacity: 0.8;
 		bottom: 0;
 	}	
@@ -55,35 +55,33 @@
 		background: none;
 
 		h1 {
-			font-size: 36px;
+			font-size: 38px;
 			font-family: $montserrat-font;
 			font-weight: 600;
 		}
 
 		p {
 			font-family: $libre-baskerville-font;
-			font-size: 14px;
+			font-size: 16px;
+			font-weight: 300;
 			line-height: 25px;
 		}
-
-		button {
+		
+		/*---- BUTTON ---*/
+		.btn {
 			@include button-style;
-			background-color: rgba(0,0,0,0.0);
-			border: 1px solid #fff;	
-
-			&:last-child {
-				margin-left: 15px;
+			background: transparent;
+			border: 1px solid #fff;			
+			margin-right: 15px;
+			
+			&:first-child {
+				;
 			}
 
 			&:hover {
-				background-color: #fff;				
-				transition: all 0.3s ease-in;
-
-				a {
-					color: #000;
-				}					  
+				background-color: #fff;
+				color: #000;
 			}
 		}
 	}
 }
-

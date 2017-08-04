@@ -2,6 +2,10 @@
 #full-menu-section {
 	padding: 80px 0;
 	font-family: $montserrat-font;
+	background-color: #fff;
+
+	position: relative; /* set z-index to hide the contact section's top box shadow */
+	z-index: 2;
 
 	/*------- TITLE BOX --------*/
 	.title-box {

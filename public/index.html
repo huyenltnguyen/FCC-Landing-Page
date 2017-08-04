@@ -6,7 +6,7 @@
 
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300i" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">   
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">   
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,9 +25,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="30">
 	<!-- ========= NAVBAR ======== -->	
-	<nav class="navbar navbar-default" id="navbar-overrides">
+	<nav class="navbar navbar-default navbar-fixed-top smooth-scroll" id="navbar-overrides">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,19 +35,17 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">
-	      	<img src="http://templates.framework-y.com/gourmet/images/logo.png" alt="logo">
+	      <a class="navbar-brand" href="#home-page">
+	      	<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/logo.png" alt="logo">
 	      </a>
 	    </div>
 
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home</a></li>
-	        <li><a href="#">About</a></li>
-	        <li><a href="#">Top Dishes</a></li>
-	        <li><a href="#">Menu</a></li>
-	        <li><a href="#">Reservation</a></li>
-	        <li><a href="#">Contact</a></li>
+	        <li class="active"><a href="#home-page">Home</a></li>
+	        <li><a href="#about-section">About</a></li>
+	        <li><a href="#top-dishes">Top Dishes</a></li>
+	        <li><a href="#contact-section">Contact</a></li>
 	      </ul>
 	    </div>	    
 	  </div>
@@ -61,11 +59,12 @@
 		<div class="animated-cloud" id="cloud-2"></div>
 
 		<div class="container">
-			<div class="jumbotron col-md-6" id="header">
+			<div class="jumbotron col-md-6 text-left" id="header">
 				  <h1>DELICIOUS ITALIAN HOME MADE CUISINE</h1>
 				  <p>Ratione numquam. Fugiat alias saepe fuga odio sed exauris, minim anim dolores earum! Veniam corporis cupidatat atque nesciunt dicta justoui varius loreto martino con sostanza e progolo. </p>
-				  <button class="btn" type="button"><a href="#" >View menu</a></button>
-				  <button class="btn" type="button"><a href="#">Reserve now</a></button>
+
+				  <a class="btn smooth-scroll-anchor" href="#full-menu-section">View menu</a>
+				  <a class="btn smooth-scroll-anchor" href="#reservation-section">Reserve now</a>
 
 			</div>
 		</div>
@@ -76,7 +75,7 @@
 	<section id="intro-section">
 		<div class="container">
 			<div class="row">
-			  <div class="single-box col-xs-6 col-md-3">
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
 			  	<div class="icon-box">
 			  		<i class="fa fa-fire" aria-hidden="true"></i>
 					</div>
@@ -87,7 +86,7 @@
 			  	</div>
 			  </div>
 
-			  <div class="single-box col-xs-6 col-md-3">
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
 			  	<div class="icon-box">
 			  		<i class="fa fa-star-o" aria-hidden="true"></i>
 					</div>
@@ -98,18 +97,18 @@
 			  	</div>
 			  </div>
 
-			  <div class="single-box col-xs-6 col-md-3">
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
 			  	<div class="icon-box">
 			  		<i class="fa fa-clock-o" aria-hidden="true"></i>
 					</div>
 			  	
-			  	<div class="caption-boxb text-left">
+			  	<div class="caption-box text-left">
 			  		<h2>Open all week</h2>
 			  		<p>Maleifend quod do nostrum fermentum repreherito mato.</p>
 			  	</div>
 			  </div>
 
-			  <div class="single-box col-xs-6 col-md-3">
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
 			  	<div class="icon-box">
 			  		<i class="fa fa-music" aria-hidden="true"></i>
 					</div>
@@ -160,8 +159,9 @@
 				</div>
 
 				<div class="col-md-4">
-					<button class="btn" type="button"><a href="#" >Book a table</a></button>
-					<button class="btn" type="button"><a href="#" >Full menu</a></button>
+					<a class="btn smooth-scroll-anchor" href="#reservation-section">Book a table</a>
+					<a class="btn smooth-scroll-anchor" href="#full-menu-section">Full menu</a>
+				  
 				</div>					
 			</div> <!-- TITLE ROW ENDS -->
 
@@ -713,35 +713,87 @@
 	<section id="contact-section">
 		<div class="container">
 			<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="title-box text-center">
-					<p class="sub-heading sub-heading-white">Delicious plates for you</p>
-					<h2>Contact us</h2>				
-				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="title-box text-center">
+						<p class="sub-heading sub-heading-white">Delicious plates for you</p>
+						<h2>Contact us</h2>				
+					</div>
 
-				<p>Tincidunt integer eu augue augue nunc elit dolor luctus placerat scelerisque euismod iaculis eu lacus vehiculautlaoreet ac, aliquam sit amet justo nunc tempor metus velio Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor luctus placerat scelerisque euismod incididunto. </p>
+					<p class="content">Tincidunt integer eu augue augue nunc elit dolor luctus placerat scelerisque euismod iaculis eu lacus vehiculautlaoreet ac, aliquam sit amet justo nunc tempor metus velio Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor luctus placerat scelerisque euismod incididunto. </p>
+				</div>				
 			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-4 contact-icon-box">
+						<i class="fa fa-comments-o" aria-hidden="true"></i>
+						<h3>Write us</h3>
+						<p>info@resturant.com</p>
+					</div>
+
+					<div class="col-md-4 contact-icon-box">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<h3>Find us</h3>
+						<p>Wall Street Ave 502, NY</p>
+					</div>
+
+					<div class="col-md-4 contact-icon-box">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<h3>Call us</h3>
+						<p>+02 3351569887</p>
+					</div>
+				</div>
 				
 			</div>
 
 		</div>
 	</section>
 
+	
+	<!-- FOOTER -->
+	<footer>
+		<div class="container-fluid" id="footer-wrapper">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<img src="http://templates.framework-y.com/gourmet/images/logo-2.png" alt="logo">
+					<p>We don't care if we're doing haute cuisine or burgers and pizza.<br>We just do it right. Always. </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="btn-group" role="group">
+
+						<button type="button" class="btn btn-facebook">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</button>
+
+						<button type="button" class="btn btn-twitter">
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</button>
+
+						<button type="button" class="btn btn-instagram">
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</button>
+
+						<button type="button" class="btn btn-youtube">
+							<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="copyright">
+				<p>©2017 Gourmet</p>
+			</div>
+		</div>
+	</footer>
+
 
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
-	<!-- JQUERY -->
-	<script
-			  src="https://code.jquery.com/jquery-3.2.1.min.js"
-			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-			  crossorigin="anonymous"></script>
 	<!-- JQUERY UI -->
-  <script
-			  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
-			  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-			  crossorigin="anonymous"></script>
-  <!-- BOOTSTRAP JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 	<!-- CUSTOM JS -->
 	<script type="application/javascript" src="build/js/scripts.min.js"></script>
 </body>

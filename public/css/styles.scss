@@ -1,32 +1,44 @@
 @import "variables";
 @import "mixins";
 @import "section-home";
+@import "section-intro";
 @import "section-about";
 @import "section-top-dishes";
 @import "section-testimonials";
 @import "section-reservation";
 @import "section-full-menu";
+@import "section-contact";
+@import "section-footer";
 
 
 html, body {
 	height: 100%;
-	box-sizing: border-box;
+	//overflow-x: hidden;
+	// box-sizing: border-box;
 }
 
 body {
-	text-align: center;
+
 	letter-spacing: 0.3px;
+	background-color: #f7f7f7;
 }
 
 /*----- OVERRIDE NAVBAR STYLES -----*/ 
 #navbar-overrides {
-	width: 100%;
-	background-color: rgba(0,0,0,0.0);
+	padding-left: 15px;   
+	padding-right: 15px;   
+	background: transparent;
 	border: none;			
 	text-transform: uppercase;
 	font-family: $montserrat-font;
-	position: absolute;
-	z-index: 100;		
+	z-index: 100;
+	transition: all 0.4s linear;
+
+	.navbar-brand {
+		height: 64px;
+		padding: 10px 15px;
+		margin-right: 15px;
+	}		
 	
 	li.active {
 		a {
@@ -35,7 +47,7 @@ body {
 	}
 	
 	li a {
-		background-color: rgba(0,0,0,0.0);
+		background: transparent;
 		color: #cdcdcd;
 		font-size: 14px;
 		line-height: 66px;		
@@ -44,69 +56,43 @@ body {
 			color: $white-text;
 			transition: all .3s;
 		}
-	}
-
-	.navbar-header {
-		margin-right: 20px;
-	}
-}
-
-/*--------- INTRO SECTION -----------*/
-#intro-section {
-	padding: 80px 0;
-	background-color: #f7f7f7;
-
-	.single-box {
-		display: flex;
-		align-items: center;
-
-		.icon-box {
-			padding-right: 28px;
-
-			.fa {
-				font-size: 66px;
-			}
-		}		
-
-		h2 {
-			font-family: $montserrat-font;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 24px;
-		}
-
-		p {
-			font-family: $libre-baskerville-font;
-			font-size: 16px;
-			line-height: 24px;
-			color: $grey-text;
-		}
 	}	
 }
 
+/*----- NAVBAR STYLE WHEN SCROLLED -----*/
+.scrolled {
+	  height: 64px;
+	  background-color: #fff !important;
+	  border-bottom: 1px solid #E4E4E4 !important;
+	  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;
+		
+	  li a {
+	  	padding: 20px 18px !important;
+	  	color: $black-text !important;
+	  	line-height: 22px !important;
+	  	font-weight: 500 !important;
+	  }
 
-/*------- CONTACT --------*/
-#contact-section {
-	padding: 80px 0;
-	min-height: 600px;
-	background: url("http://templates.framework-y.com/gourmet/images/bg-30.jpg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
-	color: $white-text;
-
-
-	/*------ TITLE BOX -------*/
-	.title-box {
-		@include title-box-style;
-
-		.sub-heading-white {
-			color: $white-text;
-		}
+	  img {
+	  	max-height: 100%;
+	  }
 	}
 
-	p {
-		font-family: $libre-baskerville-font;
-		font-size: 16px;
-		font-style: italic;
+
+
+
+
+
+/* -------- HOME SECTION MEDIA QUERIES-----------*/
+@media screen and (max-width: 410px) {
+	#home-page {
+		h2 {
+			font-size: 32px;
+			line-height: 45px;
+		}
+
+		.btn {
+			margin-top: 15px !important;
+		}
 	}
 }

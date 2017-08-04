@@ -2,13 +2,12 @@
 	padding: 10px 20px;
 	margin-top: 24px;		
 	font-size: 15px;
+	color: #fff;
 	border-radius: 28px;	
 	text-transform: uppercase;
 	font-family: $montserrat-font;
-
-	a {
-		color: $white-text;			
-	}
+	text-align: center;
+	transition: all 0.3s ease;
 }
 
 @mixin title-box-style {

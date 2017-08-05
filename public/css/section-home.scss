@@ -85,3 +85,25 @@
 		}
 	}
 }
+
+
+/* -------- HOME SECTION MEDIA QUERIES-----------*/
+@media screen and (max-width: 320px) {
+	#home-page #header {
+		margin-top: 80px;
+
+		h1 {
+			font-size: 26px;
+			line-height: 26px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		.btn {
+			@include button-style-small-screen;			
+		}
+	}
+}

@@ -28,7 +28,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="30">
 	<!-- ========= NAVBAR ======== -->	
 	<nav class="navbar navbar-default navbar-fixed-top smooth-scroll" id="navbar-overrides">
-	  <div class="container-fluid">
+	  <div class="container">
 	    <div class="navbar-header">
 		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
@@ -68,8 +68,7 @@
 
 			</div>
 		</div>
-	</header>
-
+	</header> <!-- HOME SECTION ENDS -->
 
 	<!-- INTRO SECTION -->
 	<section id="intro-section">
@@ -120,10 +119,9 @@
 			  </div>
 			</div>
 		</div>
-	</section>
+	</section> <!-- INTRO SECTION ENDS -->
 
-
-		<!-- ABOUT SECTION -->
+	<!-- ABOUT SECTION -->
 	<section id="about-section">
 		<div class="container">
 			<div class="row">
@@ -145,7 +143,7 @@
 					
 			</div>
 		</div>
-	</section>
+	</section> <!-- ABOUT SECTION ENDS -->
 
 	<!-- TOP DISHES -->
 	<section id="top-dishes">
@@ -273,8 +271,7 @@
 			</div> <!-- SECOND TOP DISHES ROW ENDS -->
 
 		</div> <!-- CONTAINER ENDS -->
-	</section>
-
+	</section> <!-- TOP DISHES ENDS -->
 
 	<!-- TESTIMONIALS -->
 	<section id="testimonials-section">
@@ -314,69 +311,80 @@
 				</div>				
 			</div> <!-- ROW ENDS -->
 		</div>
-	</section>
-
+	</section> <!-- TESTIMONIALS ENDS -->
 
 	<!-- RESERVATION SECTION --> 
 	<section id="reservation-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
-					<div class="form-group">
-						
-						<!-- SELECT NUMBER OF PEOPLE -->
-						<div class="input-group">
-						
-							<label class="sr-only" for="people">Select number of people:</label>
-							<span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>						
-						  <select class="form-control" id="people">
-						    <option>1 person</option>
-						    <option>2 people</option>
-						    <option>3 people</option>
-						    <option>4 people</option>
-						    <option>5 people</option>
-						    <option>6 people</option>
-						  </select>			  	
-						</div>					
-
-						<!-- SELECT DATE -->
-						<div class="input-group">
-							<label class="sr-only" for="datepicker">Select date:</label>
-							<span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
-			  			<input class="form-control" type="text" id="datepicker">
-						</div>
-						
-						
-						<!-- SELECT TIME -->
-						<div class="input-group">
-							<label class="sr-only" for="time">Select time:</label>
-							<span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-						  <select class="form-control" id="time">
-						    <option>5:00 PM</option>
-						    <option>6:00 PM</option>
-						    <option>7:00 PM</option>
-						    <option>8:00 PM</option>
-						    <option>9:00 PM</option>
-						  </select>
-						</div>
-
-						
-						<!-- BUTTON -->
-						<button class="btn" type="submit">Find a table</button>			
-
-				</div> <!-- FORM GROUP ENDS -->
-			</div>
-					
-
-				<div class="col-md-3 text-left">
+				<div class="col-md-4 col-md-push-8 col-sm-5 col-xs-12">
 					<div class="title-box">
 						<p class="sub-heading">A place reserved only for you</p>
-						<h2>Book a table</h2>
-					</div>
+						<h2>Book a table</h2>					
+					</div>					
 				</div>
+
+				<!-- <div class="col-md-9 col-md-pull-3 col-sm-6 col-xs-12">		         -->
+					<form class="form-inline col-md-8 col-md-pull-4 col-sm-7 col-xs-12">
+						<div class="form-group">
+							 <!-- SELECT NUMBER OF PEOPLE -->
+			      <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+			       	<div class="input-group">						
+								<label class="sr-only" for="people">Select number of people:</label>
+								<span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>						
+							  <select class="form-control" id="people">
+							    <option>1 person</option>
+							    <option>2 people</option>
+							    <option>3 people</option>
+							    <option>4 people</option>
+							    <option>5 people</option>
+							    <option>6 people</option>
+							  </select>			  	
+							</div>
+			       </div>			       
+			          
+			         <!-- SELECT DATE -->
+		          <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+								<div class="input-group">
+									<label class="sr-only" for="datepicker">Select date:</label>
+									<span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>	
+					  			<input class="form-control" type="text" id="datepicker">
+								</div>
+							</div>						
+							
+							<!-- SELECT TIME -->
+							<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+								<div class="input-group">
+									<label class="sr-only" for="time">Select time:</label>
+									<span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+								  <select class="form-control" id="time">
+								    <option>5:00 PM</option>
+								    <option>6:00 PM</option>
+								    <option>7:00 PM</option>
+								    <option>8:00 PM</option>
+								    <option>9:00 PM</option>
+								  </select>
+								</div>
+							</div>							
+							
+							<!-- BUTTON -->
+							<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+								<button class="btn" type="submit">Find a table</button>
+							</div>
+						</div>
+					</form>
+		       
+		      
+						
+		       
+		     
+		    <!-- </div> -->
+					
+
+				
 			</div>
 		</div>
-	</section>
+	</section> <!-- RESERVATION SECTION ENDS -->
 
 
 	<!-- FULL MENU SECTION -->
@@ -542,7 +550,7 @@
 				
 				<!-- IMAGE -->
 				<div class="col-md-5"> 
-					<img src="http://templates.framework-y.com/gourmet/images/food-6.jpg" alt="food">
+					<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/food-6.jpg" alt="food">
 				</div>
 				<!-- IMAGE ENDS -->
 
@@ -554,7 +562,7 @@
 			<div class="row">
 				<!--  IMAGE -->
 				<div class="col-md-5"> 
-					<img src="http://templates.framework-y.com/gourmet/images/food-7.jpg" alt="food">
+					<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/food-7.jpg" alt="food">
 				</div>
 
 				<!-- MENU CONTENT -->
@@ -707,7 +715,8 @@
 			</div> <!-- SECOND MENU CONTENT ROW ENDS -->
 
 		</div> <!-- CONTAINER ENDS -->
-	</section>
+	</section> <!-- FULL MENU ENDS -->
+
 
 	<!-- CONTACT SECTION -->
 	<section id="contact-section">
@@ -742,14 +751,12 @@
 						<h3>Call us</h3>
 						<p>+02 3351569887</p>
 					</div>
-				</div>
-				
+				</div>				
 			</div>
+		</div> <!-- CONTAINER ENDS -->
+	</section> <!-- CONTACT SECTION ENDS -->
 
-		</div>
-	</section>
 
-	
 	<!-- FOOTER -->
 	<footer>
 		<div class="container-fluid" id="footer-wrapper">
@@ -787,7 +794,8 @@
 				<p>©2017 Gourmet</p>
 			</div>
 		</div>
-	</footer>
+	</footer> <!-- FOOTER ENDS -->
+
 
 
 	<!-- SCRIPTS -->

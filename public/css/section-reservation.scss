@@ -7,29 +7,38 @@
 	.row {
 		display: flex;
 		align-items: center;
-	}	
-
+	}
 	
 	/*------- TITLE BOX --------*/
 	.title-box {
 		@include title-box-style;
+		margin: 0;
+		text-align: left;
 	}
 
-	/*----- FORM GROUP --- */
-	.form-group {
-		display: flex;
-		align-items: center;
-	}	
+	.input-group-wrapper {
+		padding: 2px;
+		margin: 0;		
+	}
+
+	
+	/*------ INPUT GROUP ------*/
+	.input-group {
+		width: 100%;
+	}
+
 
 	/*----- INPUT ICONS -------*/
 	.input-group-addon {
 		background-color: #fff;
 		border-right: none;
+		width: 50px !important;
 	}
 	
 	/*----- INPUT ELEMENTS ------*/
 	input, select {
 		height: 53px;
+		box-shadow: none;
 		border-left: none;
 		padding-left: 0;
 
@@ -37,10 +46,11 @@
 			box-shadow: none;
 		}
 	}
-	
+
+
 	/*----- BUTTON -----*/
 	button {
-		padding: 15px 30px;	
+		padding: 15px 32px;	
 		font-size: 15px;
 		text-transform: uppercase;
 		background-color: #484848;
@@ -51,4 +61,48 @@
 			transition: all 0.3s ease-in;
 		}
 	}
+}
+
+/*---- RESERVATION SECTION MEDIA QUERIES ----*/
+@media screen and (max-width: 992px) {
+	#reservation-section {
+		.title-box {
+			text-align: center;
+		}
+
+		.input-group-wrapper {
+			width: 100%;
+		}
+
+		button {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#reservation-section {
+		.row {
+			display: block;
+		}
+
+		.title-box {
+			margin-bottom: 40px;
+		}
+
+		.input-group-wrapper {
+			width: 80%;
+			padding: 0;
+			margin: 0 10%;
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#reservation-section {
+		.input-group-wrapper {
+			width: 100%;
+			margin: 0;	
+		}
+	}	
 }

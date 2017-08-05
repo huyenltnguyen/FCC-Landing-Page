@@ -13,8 +13,7 @@
 
 html, body {
 	height: 100%;
-	//overflow-x: hidden;
-	// box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -56,43 +55,29 @@ body {
 			color: $white-text;
 			transition: all .3s;
 		}
-	}	
+	}
 }
 
 /*----- NAVBAR STYLE WHEN SCROLLED -----*/
 .scrolled {
-	  height: 64px;
-	  background-color: #fff !important;
-	  border-bottom: 1px solid #E4E4E4 !important;
-	  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;
-		
-	  li a {
-	  	padding: 20px 18px !important;
-	  	color: $black-text !important;
-	  	line-height: 22px !important;
-	  	font-weight: 500 !important;
-	  }
+  height: 64px;
+  background-color: #fff !important;
+  border-bottom: 1px solid #E4E4E4 !important;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;
+	
+  li a {
+  	padding: 20px 18px !important;
+  	color: $black-text !important;
+  	line-height: 22px !important;
+  	font-weight: 500 !important;
+  }
 
-	  img {
-	  	max-height: 100%;
-	  }
-	}
-
-
-
-
-
-
-/* -------- HOME SECTION MEDIA QUERIES-----------*/
-@media screen and (max-width: 410px) {
-	#home-page {
-		h2 {
-			font-size: 32px;
-			line-height: 45px;
-		}
-
-		.btn {
-			margin-top: 15px !important;
-		}
-	}
+  img {
+  	max-height: 100%;
+  }
 }
+
+
+
+
+

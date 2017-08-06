@@ -2,7 +2,8 @@
 footer {
 	position: relative;
 	z-index: -1;
-	height: 400px;		
+	height: 400px;	
+	text-align: center;		
 
 	#footer-wrapper {
 		padding: 40px 0;
@@ -20,9 +21,9 @@ footer {
 	p {
 		margin-bottom: 30px;
 		font-family: $libre-baskerville-font;
-		font-size: 17px;
+		font-size: 14px;
 		line-height: 25px;
-		color: $grey-text;
+		color: #b3b3b3;
 	}
 
 	/*----- SOCIAL ICONS -----*/
@@ -35,7 +36,7 @@ footer {
 		transition: all 0.3s ease;
 
 		a {
-			color: $grey-text;
+			color: #b3b3b3;
 			font-size: 17px; 
 		}
 

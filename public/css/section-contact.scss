@@ -1,4 +1,4 @@
-/*------- CONTACT --------*/
+/*------- CONTACT SECTION --------*/
 #contact-section {
 	padding: 80px 0;
 	min-height: 600px;
@@ -13,6 +13,7 @@
 	color: $white-text;
 	display: flex;
 	align-items: center;
+	text-align: center;
 
 
 	/*------ TITLE BOX -------*/
@@ -27,7 +28,8 @@
 	/*------ CONTENT PARAGRAPH -------*/
 	.content {
 		font-family: $libre-baskerville-font;
-		font-size: 16px;
+		font-size: 14px;
+		line-height: 25px;
 		font-style: italic;
 	}
 
@@ -56,4 +58,15 @@
 			line-height: 25px;
 		}
 	}	
+}
+
+
+/*------ CONTACT SECTION MEDIA QUERIES ------*/
+@media screen and (min-width: 500px) and (max-width: 767px) {
+	#contact-section {
+		.contact-icon-box {
+			width: 40%;
+			display: inline-block;
+		}
+	}
 }

@@ -53,6 +53,7 @@
 	/*--------- HEADER ------------*/
 	#header {
 		background: none;
+		padding-left: 15px;
 
 		h1 {
 			font-size: 38px;
@@ -62,7 +63,7 @@
 
 		p {
 			font-family: $libre-baskerville-font;
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 300;
 			line-height: 25px;
 		}
@@ -88,22 +89,34 @@
 
 
 /* -------- HOME SECTION MEDIA QUERIES-----------*/
+@media screen and (max-width: 500px) {
+	#home-page #header {
+		h1 {
+			font-size: 32px;
+			line-height: 40px;
+		}		
+	}
+}
+
 @media screen and (max-width: 320px) {
 	#home-page #header {
-		margin-top: 80px;
-
+		margin-top: 64px;
 		h1 {
-			font-size: 26px;
-			line-height: 26px;
+			font-size: 28px;
+			line-height: 30px;
 		}
 
 		p {
-			font-size: 16px;
-			line-height: 18px;
+			font-size: 12px;
 		}
 
 		.btn {
-			@include button-style-small-screen;			
+			margin-top: 12px;
+			padding: 10px 12px;
+			font-size: 13px;
 		}
+		
 	}
 }
+
+

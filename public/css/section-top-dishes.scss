@@ -1,6 +1,5 @@
-
 /*------- TOP DISHES --------*/
-#top-dishes {
+#top-dishes-section {
 	padding: 80px 0;
 	font-family: $montserrat-font;
 	background-color: #fff;
@@ -12,6 +11,7 @@
 	/*------- TITLE BOX --------*/
 	.title-box {
 		@include title-box-style;
+		text-align: left;
 	}
 	
 	/*---- BUTTON -----*/
@@ -113,4 +113,25 @@
 			} 
 		}
 	}	
+}
+
+
+/*------ TOP DISHES SECTION MEDIA QUERIES -------*/
+@media screen and (max-width: 767px) {
+	#top-dishes-section {
+		.title-box {
+			margin-bottom: 24px;
+			text-align: center;
+		}
+
+		.button-box {
+			display: flex;
+			justify-content: center;
+
+			a {
+				margin-top: 0;
+				margin-bottom: 40px;
+			}
+		}
+	}
 }

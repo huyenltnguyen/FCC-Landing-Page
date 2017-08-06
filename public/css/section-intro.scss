@@ -2,18 +2,18 @@
 #intro-section {
 	padding: 80px 0;
 	background-color: #f7f7f7;
+	text-align: left;
 
 	.single-box {
-		display: flex;
-		align-items: center;
+		.row {
+			display: flex;
+			align-items: center;
+		}			
 
-		.icon-box {
-			padding-right: 28px;
-
-			.fa {
-				font-size: 66px;
-			}
-		}		
+		.fa {
+			font-size: 60px;
+		}
+				
 
 		h2 {
 			font-family: $montserrat-font;
@@ -24,9 +24,29 @@
 
 		p {
 			font-family: $libre-baskerville-font;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 24px;
 			color: $grey-text;
 		}
 	}	
+}
+
+
+
+
+/*------- INTRO SECTION MEDIA QUERIES -------*/
+@media screen and (max-width: 767px) {
+	#intro-section {
+		text-align: center;
+
+		.single-box {
+			.row {				
+				display: block;				
+			}						
+		}
+
+		.single-box:not(:nth-of-type(4)) {
+			margin-bottom: 20px;
+		}		
+	}
 }

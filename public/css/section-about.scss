@@ -3,8 +3,9 @@
 	padding: 80px 0;
 	background-color: #fff;
 	position: relative;
+	text-align: left;
 
-	p {
+	p {		
 		line-height: 25px;
 	}
 	
@@ -16,7 +17,7 @@
 	/*------ CONTENT PARAGRAPH -------*/
 	.content {
 		font-family: $libre-baskerville-font;
-		font-size: 16px;
+		font-size: 14px;
 		color: $grey-text;
 		margin-bottom: 30px;		
 	}
@@ -27,3 +28,19 @@
 	}
 }
 
+
+
+/*------- ABOUT SECTION MEDIA QUERIES -------*/
+@media screen and (max-width: 992px) {
+	#about-section {
+		/*----- TITLE BOX ----*/
+		.title-box {
+			text-align: center;
+		}
+		
+		/*---- IMG BOX ----*/
+		.img-box {
+			margin-top: 40px;
+		}
+	}
+}

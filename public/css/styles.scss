@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "navbar";
 @import "section-home";
 @import "section-intro";
 @import "section-about";
@@ -17,67 +18,7 @@ html, body {
 }
 
 body {
-
 	letter-spacing: 0.3px;
 	background-color: #f7f7f7;
 }
-
-/*----- OVERRIDE NAVBAR STYLES -----*/ 
-#navbar-overrides {
-	padding-left: 15px;   
-	padding-right: 15px;   
-	background: transparent;
-	border: none;			
-	text-transform: uppercase;
-	font-family: $montserrat-font;
-	z-index: 100;
-	transition: all 0.4s linear;
-
-	.navbar-brand {
-		height: 64px;
-		padding: 10px 15px;
-		margin-right: 15px;
-	}		
-	
-	li.active {
-		a {
-			color: $white-text;
-		}
-	}
-	
-	li a {
-		background: transparent;
-		color: #cdcdcd;
-		font-size: 14px;
-		line-height: 66px;		
-
-		&:hover{
-			color: $white-text;
-			transition: all .3s;
-		}
-	}
-}
-
-/*----- NAVBAR STYLE WHEN SCROLLED -----*/
-.scrolled {
-  height: 64px;
-  background-color: #fff !important;
-  border-bottom: 1px solid #E4E4E4 !important;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1) !important;
-	
-  li a {
-  	padding: 20px 18px !important;
-  	color: $black-text !important;
-  	line-height: 22px !important;
-  	font-weight: 500 !important;
-  }
-
-  img {
-  	max-height: 100%;
-  }
-}
-
-
-
-
 

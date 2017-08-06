@@ -5,7 +5,7 @@
 	<title>Landing Page</title>
 
 	<!-- FONT -->
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">   
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -28,13 +28,14 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="30">
 	<!-- ========= NAVBAR ======== -->	
 	<nav class="navbar navbar-default navbar-fixed-top smooth-scroll" id="navbar-overrides">
-	  <div class="container">
-	    <div class="navbar-header">
-		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	  <div class="container-fluid">
+	    <div class="navbar-header">    		
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
+	      
 	      <a class="navbar-brand" href="#home-page">
 	      	<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/logo.png" alt="logo">
 	      </a>
@@ -44,7 +45,7 @@
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="#home-page">Home</a></li>
 	        <li><a href="#about-section">About</a></li>
-	        <li><a href="#top-dishes">Top Dishes</a></li>
+	        <li><a href="#top-dishes-section">Top Dishes</a></li>
 	        <li><a href="#contact-section">Contact</a></li>
 	      </ul>
 	    </div>	    
@@ -59,7 +60,8 @@
 		<div class="animated-cloud" id="cloud-2"></div>
 
 		<div class="container">
-			<div class="jumbotron col-md-6 text-left" id="header">
+			<div class="row">
+				<div class="jumbotron col-md-6 col-sm-8 col-xs-12 text-left" id="header">
 				  <h1>DELICIOUS ITALIAN HOME MADE CUISINE</h1>
 				  <p>Ratione numquam. Fugiat alias saepe fuga odio sed exauris, minim anim dolores earum! Veniam corporis cupidatat atque nesciunt dicta justoui varius loreto martino con sostanza e progolo. </p>
 
@@ -67,6 +69,8 @@
 				  <a class="btn smooth-scroll-anchor" href="#reservation-section">Reserve now</a>
 
 			</div>
+			</div>
+			
 		</div>
 	</header> <!-- HOME SECTION ENDS -->
 
@@ -74,64 +78,76 @@
 	<section id="intro-section">
 		<div class="container">
 			<div class="row">
-			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
-			  	<div class="icon-box">
-			  		<i class="fa fa-fire" aria-hidden="true"></i>
-					</div>
-			  	
-			  	<div class="caption-box text-left">
-			  		<h2>Original barbeque</h2>
-			  		<p>Eleifend quod do nostrum fermentum reprehende rito.</p>
-			  	</div>
-			  </div>
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12"> <!-- SINGLE BOX -->
+			  	<div class="row">
+			  		<div class="icon-box col-sm-3">
+				  		<i class="fa fa-fire" aria-hidden="true"></i>
+						</div>
 
-			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
-			  	<div class="icon-box">
-			  		<i class="fa fa-star-o" aria-hidden="true"></i>
-					</div>
+						<div class="caption-box col-sm-9">
+				  		<h2>Original barbeque</h2>
+				  		<p>Eleifend quod do nostrum fermentum reprehende rito gal.</p>
+				  	</div>
+			  	</div>			  				  	
 			  	
-			  	<div class="caption-box text-left">
-			  		<h2>Starred cooks</h2>
-			  		<p>Odit eleifend quod do nostrum fermentum reprehenderito.</p>
-			  	</div>
-			  </div>
+			  </div>	<!-- SINGLE BOX ENDS -->
 
-			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
-			  	<div class="icon-box">
-			  		<i class="fa fa-clock-o" aria-hidden="true"></i>
-					</div>
-			  	
-			  	<div class="caption-box text-left">
-			  		<h2>Open all week</h2>
-			  		<p>Maleifend quod do nostrum fermentum repreherito mato.</p>
-			  	</div>
-			  </div>
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12"> <!-- SINGLE BOX -->
+			  	<div class="row">
+			  		<div class="icon-box col-sm-3">
+				  		<i class="fa fa-star-o" aria-hidden="true"></i>
+						</div>
 
-			  <div class="single-box col-md-3 col-sm-6 col-xs-12">
-			  	<div class="icon-box">
-			  		<i class="fa fa-music" aria-hidden="true"></i>
-					</div>
-			  	
-			  	<div class="caption-box text-left">
-			  		<h2>Country music</h2>
-			  		<p>Fermentum repre henderit inim solli citudin maopro.</p>
+						<div class="caption-box col-sm-9">
+				  		<h2>Starred cooks</h2>
+			  			<p>Odit eleifend quod do nostrum fermentum repro ben turin.</p>
+				  	</div>
 			  	</div>
-			  </div>
-			</div>
-		</div>
+			  </div>	<!-- SINGLE BOX ENDS -->
+
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12"> <!-- SINGLE BOX -->
+			  	<div class="row">
+			  		<div class="icon-box col-sm-3">
+				  		<i class="fa fa-clock-o" aria-hidden="true"></i>
+						</div>
+
+						<div class="caption-box col-sm-9">
+				  		<h2>Open all week</h2>
+			  			<p>Maleifend quod do nostrum fermentum repreherito mato.</p>
+				  	</div>
+			  	</div>			  	
+			  </div>	<!-- SINGLE BOX ENDS -->
+
+			  <div class="single-box col-md-3 col-sm-6 col-xs-12"> <!-- SINGLE BOX -->
+			  	<div class="row">
+			  		<div class="icon-box col-sm-3">
+				  		<i class="fa fa-music" aria-hidden="true"></i>
+						</div>
+
+						<div class="caption-box col-sm-9">
+				  		<h2>Country music</h2>
+			  			<p>Fermentum repre henderit inim solli citudin maopro efine ino.</p>
+				  	</div>
+			  	</div>			  	
+			  </div>	<!-- SINGLE BOX ENDS -->				
+
+			</div> <!-- ROW ENDS -->
+		</div> <!-- CONTAINER ENDS -->
 	</section> <!-- INTRO SECTION ENDS -->
+
 
 	<!-- ABOUT SECTION -->
 	<section id="about-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 text-left">
+				<div class="col-md-6">
 					<div class="title-box">
 						<p class="sub-heading">Sweet and tiny like a chocolate</p>
 						<h2>Our story</h2>					
 					</div>
 
 					<p class="content">Tincidunt integer eu augue augue nunc elit dolor luctus placerat scelerisque euismod iaculis eu lacus nunc mi elit vehicula ut laoreet acaliquam sit amet justo nunc tempor metus vel. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
 					<img src="http://templates.framework-y.com/gourmet/images/sign-2.png" alt="Signature" />
 				</div>
 
@@ -145,18 +161,19 @@
 		</div>
 	</section> <!-- ABOUT SECTION ENDS -->
 
+
 	<!-- TOP DISHES -->
-	<section id="top-dishes">
+	<section id="top-dishes-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 text-left">
+				<div class="col-md-5 col-sm-6">
 					<div class="title-box">
 						<p class="sub-heading">Take a look to the best of the meals</p>
 						<h2>Top specialities</h2>					
 					</div>					
 				</div>
 
-				<div class="col-md-4">
+				<div class="button-box col-md-7 col-sm-6">
 					<a class="btn smooth-scroll-anchor" href="#reservation-section">Book a table</a>
 					<a class="btn smooth-scroll-anchor" href="#full-menu-section">Full menu</a>
 				  
@@ -164,7 +181,7 @@
 			</div> <!-- TITLE ROW ENDS -->
 
 
-			<div class="row">
+			<div class="row">			
 			  <div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
 			    	<div class="thumbnail-img">
@@ -215,9 +232,7 @@
 			      </div>
 			    </div>
 			  </div> <!-- SINGLE THUMBNAIL ENDS -->
-			</div> <!-- FIRST TOP DISHES ROW ENDS -->
 
-			<div class="row">
 			  <div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
 			    	<div class="thumbnail-img">
@@ -268,7 +283,7 @@
 			      </div>
 			    </div>
 			  </div> <!-- SINGLE THUMBNAIL ENDS -->
-			</div> <!-- SECOND TOP DISHES ROW ENDS -->
+			</div> <!-- TOP DISHES ROW ENDS -->
 
 		</div> <!-- CONTAINER ENDS -->
 	</section> <!-- TOP DISHES ENDS -->
@@ -324,63 +339,55 @@
 					</div>					
 				</div>
 
-				<!-- <div class="col-md-9 col-md-pull-3 col-sm-6 col-xs-12">		         -->
-					<form class="form-inline col-md-8 col-md-pull-4 col-sm-7 col-xs-12">
-						<div class="form-group">
-							 <!-- SELECT NUMBER OF PEOPLE -->
-			      <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
-			       	<div class="input-group">						
-								<label class="sr-only" for="people">Select number of people:</label>
-								<span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>						
-							  <select class="form-control" id="people">
-							    <option>1 person</option>
-							    <option>2 people</option>
-							    <option>3 people</option>
-							    <option>4 people</option>
-							    <option>5 people</option>
-							    <option>6 people</option>
-							  </select>			  	
-							</div>
-			       </div>			       
-			          
-			         <!-- SELECT DATE -->
-		          <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
-								<div class="input-group">
-									<label class="sr-only" for="datepicker">Select date:</label>
-									<span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>	
-					  			<input class="form-control" type="text" id="datepicker">
-								</div>
-							</div>						
-							
-							<!-- SELECT TIME -->
-							<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
-								<div class="input-group">
-									<label class="sr-only" for="time">Select time:</label>
-									<span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-								  <select class="form-control" id="time">
-								    <option>5:00 PM</option>
-								    <option>6:00 PM</option>
-								    <option>7:00 PM</option>
-								    <option>8:00 PM</option>
-								    <option>9:00 PM</option>
-								  </select>
-								</div>
-							</div>							
-							
-							<!-- BUTTON -->
-							<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
-								<button class="btn" type="submit">Find a table</button>
-							</div>
-						</div>
-					</form>
-		       
-		      
-						
-		       
-		     
-		    <!-- </div> -->
-					
+				<form class="form-inline col-md-8 col-md-pull-4 col-sm-7 col-xs-12">
+					<div class="form-group">
 
+						 <!-- SELECT NUMBER OF PEOPLE -->
+		      <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+		       	<div class="input-group">						
+							<label class="sr-only" for="people">Select number of people:</label>
+							<span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>						
+						  <select class="form-control" id="people">
+						    <option>1 person</option>
+						    <option>2 people</option>
+						    <option>3 people</option>
+						    <option>4 people</option>
+						    <option>5 people</option>
+						    <option>6 people</option>
+						  </select>			  	
+						</div>
+		       </div>			       
+		          
+		         <!-- SELECT DATE -->
+	          <div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+							<div class="input-group">
+								<label class="sr-only" for="datepicker">Select date:</label>
+								<span class="input-group-addon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>	
+				  			<input class="form-control" type="text" id="datepicker">
+							</div>
+						</div>						
+						
+						<!-- SELECT TIME -->
+						<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+							<div class="input-group">
+								<label class="sr-only" for="time">Select time:</label>
+								<span class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+							  <select class="form-control" id="time">
+							    <option>5:00 PM</option>
+							    <option>6:00 PM</option>
+							    <option>7:00 PM</option>
+							    <option>8:00 PM</option>
+							    <option>9:00 PM</option>
+							  </select>
+							</div>
+						</div>							
+						
+						<!-- BUTTON -->
+						<div class="input-group-wrapper col-md-3 col-xs-8 col-xs-offset-2">
+							<button class="btn" type="submit">Find a table</button>
+						</div>
+					</div>
+				</form> <!-- FORM ENDS -->
 				
 			</div>
 		</div>
@@ -404,16 +411,18 @@
 				<!-- MENU CONTENT -->
 				<div class="col-md-7">
 					<div class="row"> <!-- MENU LIST -->
-						<div class="col-md-6"> <!-- LEFT HALF LIST -->
+
+					<!-- LEFT HALF LIST -->
+						<div class="col-sm-6"> 
 							<div class="menu-items">
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Ocean trout in saffron</h3>
 											<p>Lorem ipsum dolor sit ameto consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$21</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -421,12 +430,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Crispy skin Cone</h3>
 											<p>Lorem ipsum dolor sit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$5</span>
 										</div> <!-- ITEM PRICE ENDS -->
 
@@ -435,12 +444,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Seared blue eye</h3>
 											<p>Sunt in culpa qui deserunt</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$10</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -448,12 +457,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Roast spatchcock</h3>
 											<p>Excepteur sint occaecat cupidatat non proident</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$15</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -461,12 +470,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Wild mushroom ragout</h3>
 											<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$22</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -475,16 +484,17 @@
 						</div> <!-- LEFT HALF LIST ENDS -->
 
 
-						<div class="col-md-6"> <!-- RIGHT HALF LIST -->
+						<!-- RIGHT HALF LIST -->
+						<div class="col-sm-6"> 
 							<div class="menu-items">
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Grilled beef fillet</h3>
 											<p>Lorem ipsum dolor sit ameto consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$19</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -492,12 +502,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Slow roasted veal</h3>
 											<p>Lorem ipsum dolor sit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$49</span>
 										</div> <!-- ITEM PRICE ENDS -->
 
@@ -506,12 +516,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Wild mushroom ragout</h3>
 											<p>Sunt in culpa qui deserunt</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$20</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -519,12 +529,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Steamed jasmine rice</h3>
 											<p>Excepteur sint occaecat cupidatat non proident</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$10</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -532,25 +542,25 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Butter poached scampi</h3>
 											<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$50</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
 								</div> <!-- SINGLE ITEM ENDS -->
 							</div> 
-						</div> <!-- LEFT HALF LIST ENDS -->
+						</div> <!-- RIGHT HALF LIST ENDS -->
 
 					</div> <!-- MENU LIST ENDS -->
 				</div> 
 				
 				<!-- IMAGE -->
 				<div class="col-md-5"> 
-					<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/food-6.jpg" alt="food">
+					<img class="img-responsive hidden-sm hidden-xs" src="http://templates.framework-y.com/gourmet/images/food-6.jpg" alt="food">
 				</div>
 				<!-- IMAGE ENDS -->
 
@@ -562,22 +572,24 @@
 			<div class="row">
 				<!--  IMAGE -->
 				<div class="col-md-5"> 
-					<img class="img-responsive" src="http://templates.framework-y.com/gourmet/images/food-7.jpg" alt="food">
+					<img class="img-responsive hidden-sm hidden-xs" src="http://templates.framework-y.com/gourmet/images/food-7.jpg" alt="food">
 				</div>
 
 				<!-- MENU CONTENT -->
 				<div class="col-md-7">
 					<div class="row"> <!-- MENU LIST -->
-						<div class="col-md-6"> <!-- LEFT HALF LIST -->
+
+						<!-- LEFT HALF LIST -->
+						<div class="col-sm-6"> 
 							<div class="menu-items">
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Ocean trout in saffron</h3>
 											<p>Lorem ipsum dolor sit ameto consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$21</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -585,12 +597,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Crispy skin Cone</h3>
 											<p>Lorem ipsum dolor sit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$5</span>
 										</div> <!-- ITEM PRICE ENDS -->
 
@@ -599,12 +611,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Seared blue eye</h3>
 											<p>Sunt in culpa qui deserunt</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$10</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -612,12 +624,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Roast spatchcock</h3>
 											<p>Excepteur sint occaecat cupidatat non proident</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$15</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -625,12 +637,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Wild mushroom ragout</h3>
 											<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$22</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -639,16 +651,17 @@
 						</div> <!-- LEFT HALF LIST ENDS -->
 
 
-						<div class="col-md-6"> <!-- RIGHT HALF LIST -->
+						<!-- RIGHT HALF LIST -->
+						<div class="col-sm-6"> 
 							<div class="menu-items">
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Grilled beef fillet</h3>
 											<p>Lorem ipsum dolor sit ameto consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$19</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -656,12 +669,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Slow roasted veal</h3>
 											<p>Lorem ipsum dolor sit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$49</span>
 										</div> <!-- ITEM PRICE ENDS -->
 
@@ -670,12 +683,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Wild mushroom ragout</h3>
 											<p>Sunt in culpa qui deserunt</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$20</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -683,12 +696,12 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Steamed jasmine rice</h3>
 											<p>Excepteur sint occaecat cupidatat non proident</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$10</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
@@ -696,18 +709,18 @@
 
 								<div class="menu-item"> <!-- SINGLE ITEM -->
 									<div class="row">
-										<div class="col-md-9"> <!-- ITEM NAME -->
+										<div class="col-xs-9 text-left"> <!-- ITEM NAME -->
 											<h3>Butter poached scampi</h3>
 											<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 										</div> <!-- ITEM NAME ENDS -->
 
-										<div class="col-md-3"> <!-- ITEM PRICE -->
+										<div class="col-xs-3 text-right"> <!-- ITEM PRICE -->
 											<span>$50</span>
 										</div> <!-- ITEM PRICE ENDS -->
 									</div>
 								</div> <!-- SINGLE ITEM ENDS -->
 							</div> 
-						</div> <!-- LEFT HALF LIST ENDS -->
+						</div> <!-- RIGHT HALF LIST ENDS -->
 
 					</div> <!-- MENU LIST ENDS -->
 				</div>
@@ -722,8 +735,8 @@
 	<section id="contact-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="title-box text-center">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<div class="title-box">
 						<p class="sub-heading sub-heading-white">Delicious plates for you</p>
 						<h2>Contact us</h2>				
 					</div>
@@ -733,20 +746,20 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-4 contact-icon-box">
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<div class="col-sm-4 contact-icon-box">
 						<i class="fa fa-comments-o" aria-hidden="true"></i>
 						<h3>Write us</h3>
 						<p>info@resturant.com</p>
 					</div>
 
-					<div class="col-md-4 contact-icon-box">
+					<div class="col-sm-4 contact-icon-box">
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
 						<h3>Find us</h3>
 						<p>Wall Street Ave 502, NY</p>
 					</div>
 
-					<div class="col-md-4 contact-icon-box">
+					<div class="col-sm-4 contact-icon-box">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						<h3>Call us</h3>
 						<p>+02 3351569887</p>

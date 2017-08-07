@@ -21,7 +21,7 @@ gulp.task('styles', function() {
 	gulp.src("public/css/styles.scss")
 		.pipe(sass())
 		.on("error", handleErrors)
-		.pipe(prefix())
+		.pipe(prefix('last 2 versions'))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest("public/build/css/"));
 });
